@@ -15,10 +15,13 @@ console.log(calcolo);
 
 if ((calcolo == 0) && (userChoice == "pari")) {
     console.log("Hai vinto");
+    alert("hai vinto!")
 } else if ((calcolo != 0) && (userChoice == "dispari")) {
     console.log("Hai vinto");
+    alert("hai vinto!")
 } else {
     console.log("Hai perso");
+    alert("hai quasi vinto!")
 }
 
 
