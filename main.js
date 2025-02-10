@@ -14,8 +14,18 @@ console.log(prezzoLordo);
 if (eta < 18) {
     let sconto = (prezzoLordo * 20) / 100;
     console.log(sconto);
-
     const prezzoNetto = (prezzoLordo - sconto);
-    console.log(prezzoNetto);
+    console.log(prezzoNetto.toFixed(2));
+    alert(`${"Il prezzo da pagare è"}, ${prezzoNetto.toFixed(2)}`)
+} else if (eta > 65) {
+    sconto = (prezzoLordo * 40) / 100;
+    console.log(sconto);
+    const prezzoNetto = (prezzoLordo - sconto);
+    console.log(prezzoNetto.toFixed(2));
+    alert(`${"Il prezzo da pagare è"}, ${prezzoNetto.toFixed(2)}`)
+} else {
+    console.log(prezzoLordo.toFixed(2))
+    alert(`${"Il prezzo da pagare è"}, ${prezzoLordo.toFixed(2)}`);
 
 }
+
